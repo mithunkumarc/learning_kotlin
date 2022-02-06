@@ -19,17 +19,21 @@ val userData: Pair<String, Int> = "rajat" to 32
 fun main() {
 	println(coordinates)
     println(userData)
-    // reading
+    // reading : similar to python unpacking
     val (x,y) = coordinates
     println("x : $x and y : $y")
     
-    val (name, age) = userData
+    // another way of reading
+    val name = userData.first // first data is referred as first and second as second
+    val age = userData.second
     println("name: $name and $age")
 }
 
 /*
   	(2, 6)
 	(rajat, 32)
-    x : 2 and y : 6
-    name: rajat and 32
+    	x : 2 and y : 6
+    	name: rajat and 32
 */
+
+

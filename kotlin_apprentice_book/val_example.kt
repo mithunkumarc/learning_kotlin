@@ -5,6 +5,7 @@
 * val x: Int //ok but you cannot use it yet
 * data type will be inferred after initialization
 * val y: Int = 3 //ok
+* val cannot be re-assigned
 * 
 */
 // imports packages
@@ -24,7 +25,7 @@ fun main() {
     val y: String = "hello" // datatype not required
     println(y)
     val z = 12.3f
-  
+    // z = 3.3f // error : cannot be reinitialized/reassign a value 
     println(z)
     
 }
